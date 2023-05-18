@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <!-- Header -->
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="391dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Profil kelompok"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="33dp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="20dp" /> />
+
+
+            <Switch
+                android:id="@+id/switchkDarkProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="25sp"
+                android:width="60dp"
+                android:height="29dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="313dp"
+                android:height="36.8dp"
+                android:background="@drawable/btn3"
+                android:layout_marginLeft="50dp"
+                android:text="Logout"
+                android:textColor="#000"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <!-- Konten yang dapat di-scroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="392dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/profpeng"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="97dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+
+                    android:layout_width="391dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="300dp"
+                    android:src="@drawable/profpeng2"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="293dp" />
+
+                <ImageView
+                    android:layout_width="394dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="550dp"
+                    android:src="@drawable/profpeng3"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="494dp" />
+                <ImageView
+                    android:layout_width="394dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="850dp"
+                    android:src="@drawable/profpeng4"
+                    tools:ignore="ContentDescription"
+                    tools:layout_editor_absoluteX="6dp"
+                    tools:layout_editor_absoluteY="494dp" />
+
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="391dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Description of the image"
+                android:src="@drawable/shape"
+                tools:ignore="HardcodedText,ImageContrastCheck,VisualLintBounds" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/discovery1"
+                tools:ignore="HardcodedText,RtlHardcoded,DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/vector1"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:contentDescription="Description of the image"
+                app:srcCompat="@drawable/profile"
+                tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
